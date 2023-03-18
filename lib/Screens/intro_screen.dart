@@ -25,7 +25,7 @@ class IntroScreen extends StatelessWidget {
               'Commit to be fit, dare to be great \nwith Globo Fitness',
               textAlign: TextAlign.center,
               style: TextStyle(
-                fontSize: 22,
+                fontSize: 20,
                 fontWeight: FontWeight.w500,
                 shadows: [
                   Shadow(
