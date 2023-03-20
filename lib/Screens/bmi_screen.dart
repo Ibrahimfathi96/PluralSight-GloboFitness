@@ -43,25 +43,28 @@ class _BMIScreenState extends State<BMIScreen> {
       body: SingleChildScrollView(
         child: Column(
           children: [
-            ToggleButtons(
-              isSelected: isSelected,
-              onPressed: toggleMeasure,
-              children: const [
-                Padding(
-                  padding: EdgeInsets.symmetric(horizontal: 16),
-                  child: Text(
-                    'Metric',
-                    style: TextStyle(fontSize: 18),
+            Padding(
+              padding: const EdgeInsets.only(top: 30.0),
+              child: ToggleButtons(
+                isSelected: isSelected,
+                onPressed: toggleMeasure,
+                children: const [
+                  Padding(
+                    padding: EdgeInsets.symmetric(horizontal: 16),
+                    child: Text(
+                      'Metric',
+                      style: TextStyle(fontSize: 18),
+                    ),
                   ),
-                ),
-                Padding(
-                  padding: EdgeInsets.symmetric(horizontal: 16),
-                  child: Text(
-                    'Imperial',
-                    style: TextStyle(fontSize: 18),
+                  Padding(
+                    padding: EdgeInsets.symmetric(horizontal: 16),
+                    child: Text(
+                      'Imperial',
+                      style: TextStyle(fontSize: 18),
+                    ),
                   ),
-                ),
-              ],
+                ],
+              ),
             ),
             Padding(
               padding: const EdgeInsets.all(24.0),

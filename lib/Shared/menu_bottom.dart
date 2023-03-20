@@ -12,11 +12,14 @@ class MenuButton extends StatelessWidget {
           break;
           case 1 : Navigator.pushNamed(context, '/bmi');
           break;
+          case 2 : Navigator.pushNamed(context, '/weather');
+          break;
         }
       },
       items: const [
         BottomNavigationBarItem(icon: Icon(Icons.home), label: 'home'),
         BottomNavigationBarItem(icon: Icon(Icons.monitor_weight), label: 'BMI'),
+        BottomNavigationBarItem(icon: Icon(Icons.nights_stay), label: 'Weather'),
       ],
     );
   }
