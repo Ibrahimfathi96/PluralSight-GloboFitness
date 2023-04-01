@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:global_app_fitness/Screens/bmi_screen.dart';
 import 'package:global_app_fitness/Screens/weather_screen.dart';
 import 'Screens/intro_screen.dart';
+import 'Screens/sessions_screen.dart';
 
 void main() {
   runApp(GloboFitnessAPP());
@@ -16,8 +17,9 @@ class GloboFitnessAPP extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       routes: {
         '/' : (_)=> IntroScreen(),
-        '/bmi':(_)=> BMIScreen(),
-        '/weather':(_)=> WeatherScreen()
+        '/bmi':(_)=> const BMIScreen(),
+        '/weather':(_)=> const WeatherScreen(),
+        '/session':(_)=> SessionScreen(),
       },
       initialRoute: '/',
       theme: ThemeData(primarySwatch: Colors.blueGrey),
